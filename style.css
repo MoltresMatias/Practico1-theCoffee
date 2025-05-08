@@ -8,8 +8,8 @@
     --color--3:#5e3023;
     --color--4:#895737;
     --color--5:#dab49d;
-    --color--6:#5e3023ba;
-
+    --color--6:#5e3023cb;
+    --color--9:#5e302361;
     --color--7:#C1DDDE;
     --color--8:#235C5E;
 }
@@ -17,12 +17,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: "Inter", sans-serif;
 }
 
+/* Inicio Header */
 header{
     background-color: var(--color--1);
 }
@@ -135,9 +137,12 @@ nav .home-link{
     }
 
 }
+/* Fin Header */
 
 
 
+
+/* Inicio carrusel */
 .bg-title{
     background-color: var(--color--6);
 }
@@ -151,6 +156,12 @@ nav .home-link{
     color: var(--color--1);
 }
 
+/* Fin carrusel */
+
+
+
+
+/* Inicio Nosotros */
 .nosotros p{
     color: var(--color--3);
 }
@@ -159,14 +170,13 @@ nav .home-link{
     color: var(--color--2);
 }
 .contenedor-img{
-    width: auto;
-    height: 350px;
+
     overflow: hidden;
     
 }
 .imagen{
-    object-fit: cover;
-    width: auto;
+    object-fit:cover;
+    width: 100%;
     height: 350px;
     transition: transform .4s ease;
 }
@@ -174,3 +184,129 @@ nav .home-link{
 .contenedor-img:hover .imagen{
     transform: scale(1.1);
 }
+
+
+.origen{
+    text-decoration: none;
+    color: var(--color--8);
+}
+
+.origen:hover{
+    color: var(--color--7);
+}
+
+/* Fin Nosotros */
+
+
+
+
+
+/* Inicio Productos */
+
+.productos{
+    background-color: var(--color--1);
+}
+.productos h2{
+    color: var(--color--2);
+}
+
+
+.cont-img{
+    height: 250px;
+    width: 450px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.contendor-img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.contendor-img img{
+    
+    transition: .3s ease;
+    object-fit:cover;
+    height: 80%;
+    opacity: 1;
+    
+}
+.contendor-img::after{
+    content:'';
+	position: absolute;
+	background-color: var(--color--6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease;
+}
+
+.cont-img:hover .contendor-img::after{
+    background-color: var(--color--9);
+}
+
+.cont-img .text{
+    text-align: center;
+    transition:  0.3s ease;
+    color: var(--color--1);
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.292));
+}
+
+.cont-img:hover .text{
+    color: white;
+}
+
+.cont-img:hover img{
+    transform: scale(1.1);
+}
+
+
+.btn-color {
+    background-color: var(--color--1);
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    transition: .3s ease;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    color: var(--color--3);
+}
+
+.btn-color:hover{
+    background-color: var(--color--2);
+}
+
+/* Fin Productos */
+
+
+
+
+
+/* Inicio footage */
+
+.fondo-footer{
+    background-color: var(--color--1);
+}
+
+.col-img {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+.link-footage{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+
+}
+
+.direccion{
+    color: var(--color--3);
+    font-size: 13px;
+}
+
+/* Fin footage */
