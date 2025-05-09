@@ -216,6 +216,7 @@ nav .home-link{
     width: 450px;
     overflow: hidden;
     transition: .3s ease;
+    border-radius: 4px;
 }
 
 .contendor-img{
