@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas</title>
+    <link rel="stylesheet" href="bebidas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav >
+                <img class="home-link-res" src="svg/Logo.svg" alt="">
+                
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                    <img src="svg/menu_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </label>
+
+                <label id="overlay" for="sidebar-active"></label>
+                
+                <div class="links-container" >
+                    <label for="sidebar-active" class="close-sidebar-button">
+                        <img src="svg/close_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </label>
+                    
+                    <img class="home-link" src="svg/Logo.svg" alt="">
+                    
+                    <a href="index.html">Inicio</a>
+                    <a href="bebidas.html">Bebidas</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- Main -->
+    <main>
+        <section class="portada">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col position-absolute z-1">
+                        <h1 class="title-color text-center">Comidas</h1>
+                    </div>
+                        
+                    <div class="col d-flex justify-content-center">
+                        <div class="portada-img">
+                            <img class="img-fluid" src="Imagenes/6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu my-5">
+            <div class="container color-fondo py-4 rounded-2">
+                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Comidas</button>
+                    </li>
+                </ul>
+                <div class="tab-content color-text" id="myTabContent">
+                    
+                    <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item">- Croissants rellenos de jamón y queso</li>
+                            <li class="list-group-item">- Muffins de arándanos o chocolate </li>
+                            <li class="list-group-item">- Bagels con queso crema y salmón </li>
+                            <li class="list-group-item">- Churros con chocolate </li>
+                            <li class="list-group-item">- Tostadas con tomate y aceite de oliva </li>
+                            <li class="list-group-item">- Bowl de açaí con granola y frutas </li>
+                            <li class="list-group-item">- Pancakes de quinoa con miel de agave </li>
+                            <li class="list-group-item">- Huevos benedictinos con salmón ahumado</span> </li>
+                            <li class="list-group-item">- Burrito de desayuno con huevo y verduras </li>
+                            <li class="list-group-item">- Wrap de espinaca con pollo y queso </li>
+                            <li class="list-group-item">- Galletas de avena y frutos secos </li>
+                            <li class="list-group-item">- Panqueques con miel o dulce de leche</li>
+                            <li class="list-group-item">- Yogur con granola y frutas</li>
+                            <li class="list-group-item">- Bowl de avena con frutos secos y miel</li>
+                            <li class="list-group-item">- Tostadas integrales con palta y huevo</li>
+                            <li class="list-group-item">- Omelette de claras con espinaca y queso</li>
+                            <li class="list-group-item">- Sándwich de jamón y queso en pan artesanal</li>
+                            <li class="list-group-item">- Waffles con frutas y crema</li>
+                            <li class="list-group-item">- Tostadas francesas con sirope de maple</li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+<!-- Footer -->
+    <footer class="fondo-footer">
+        <nav class="container ">
+            <div class="row mt-5 pt-4">
+                <div class="col-12 col-img">
+                    <img src="svg/Logo.svg" alt="">
+                </div>
+                <div class="col-12 d-flex justify-content-between">
+                    <div>
+                        <div class="direccion">
+                            <h6>Ubicacion</h6>
+                            <p>Avenida Siempre Viva 568. <br>Tel. 356786456</p>
+                        </div>
+                    </div>
+                    <div >
+                        <ul class="link-footage">
+                            <li><a href="contactos.html">Contacto</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>
