@@ -13,7 +13,6 @@
         <div class="container">
             <nav >
                 <img class="home-link-res" src="svg/Logo.svg" alt="">
-                
                 <input type="checkbox" id="sidebar-active">
                 <label for="sidebar-active" class="open-sidebar-button">
                     <img src="svg/menu_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -29,8 +28,7 @@
                     <img class="home-link" src="svg/Logo.svg" alt="">
                     
                     <a href="index.html">Inicio</a>
-                    <a href="comidas.html">Comidas</a>
-                    <a href="contactos.html">Contactos</a>
+                    
                 </div>
             </nav>
         </div>
@@ -38,7 +36,41 @@
 <!-- Main -->
     <main>
 
+    <section class="formulario">
+        <div class="container content-form">
+            <div class="row my-5">
+                <div class="col-12">
+                    <img class="m-auto d-flex"src="svg/Logo.svg" height="40px" alt="">
+                    <h1 class="text-center mt-5">Contacto</h1>
+                </div>
+                <div class="col">
+                    <form>
+                        <div>
+                            <label id="nombre">Nombre y Apellido</label>
+                            <input id="nombre" type="name" placeholder="Juan Peréz" required>
+                        </div>
 
+                        <div>
+                            <label id="correo">Correo</label>
+                            <input id="correo" type="email" placeholder="ejemplo@email.com" required>
+                        </div>
+
+                        <div>
+                            <label id="telefono">Telefono</label>
+                            <input id="telefono" type="tel" placeholder="telefono" required>
+                        </div>
+
+                        <div>
+                            <label id="comentario">Comentarios</label>
+                            <textarea name="text" id="comentario"></textarea>
+                        </div>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </main>
 
