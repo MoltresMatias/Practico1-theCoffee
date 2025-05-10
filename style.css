@@ -263,6 +263,16 @@ nav .home-link{
     transform: scale(1.1);
 }
 
+@media (max-width: 450px){
+    .cont-img:hover img{
+        transform: none;
+    }
+
+    .cont-img:hover .contendor-img::after{
+    background-color: var(--color--6);
+}
+}
+
 
 .btn-color {
     background-color: var(--color--1);
