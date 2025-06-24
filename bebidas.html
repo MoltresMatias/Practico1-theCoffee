@@ -1,142 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bebidas</title>
-    <link rel="stylesheet" href="bebidas-comida.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="bebidas-comida.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav >
-                <img class="home-link-res" src="svg/Logo.svg" alt="">
-                
-                <input type="checkbox" id="sidebar-active">
-                <label for="sidebar-active" class="open-sidebar-button">
-                    <img src="svg/menu_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                </label>
+      <div class="container">
+        <nav>
+          <img class="home-link-res" src="svg/Logo.svg" alt="" />
 
-                <label id="overlay" for="sidebar-active"></label>
-                
-                <div class="links-container" >
-                    <label for="sidebar-active" class="close-sidebar-button">
-                        <img src="svg/close_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                    </label>
-                    
-                    <img class="home-link" src="svg/Logo.svg" alt="">
-                    
-                    <a href="index.html">Inicio</a>
-                    <a href="comidas.html">Comidas</a>
-                    <a href="contactos.html">Contactos</a>
-                </div>
-            </nav>
-        </div>
+          <input type="checkbox" id="sidebar-active" />
+          <label for="sidebar-active" class="open-sidebar-button">
+            <img
+              src="svg/menu_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </label>
+
+          <label id="overlay" for="sidebar-active"></label>
+
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <img
+                src="svg/close_24dp_5E3023_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </label>
+
+            <img class="home-link" src="svg/Logo.svg" alt="" />
+
+            <a href="index.html">Inicio</a>
+            <a href="comidas.html">Comidas</a>
+            <a href="contactos.html">Contactos</a>
+          </div>
+        </nav>
+      </div>
     </header>
-<!-- Main -->
+    <!-- Main -->
     <main>
-        <section class="portada">
-            <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col position-absolute z-1">
-                        <h1 class="title-color text-center">Bebidas</h1>
-                    </div>
-                        
-                    <div class="col d-flex justify-content-center">
-                        <div class="portada-img">
-                            <img class="img-fluid" src="Imagenes/1.png" alt="">
-                        </div>
-                    </div>
-                </div>
+      <section class="portada">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col position-absolute z-1">
+              <h1 class="title-color text-center">Bebidas</h1>
             </div>
-        </section>
 
-        <section class="menu my-5">
-            <div class="container color-fondo py-4 rounded-2">
-                <ul class="nav nav-tabs " id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Calientes</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bold " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Frias</button>
-                    </li>
-                </ul>
-                <div class="tab-content color-text" id="myTabContent">
-                    
-                    <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item">- Café negro <span>(americano, espresso, ristretto, lungo)</span> </li>
-                            <li class="list-group-item">- Café con leche <span>(latte, cappuccino, flat white, macchiato)</span> </li>
-                            <li class="list-group-item">- Café especial <span>(mocha, affogato, vienés)</span> </li>
-                            <li class="list-group-item">- Té <span>(negro, verde, rojo, blanco, chai)</span> </li>
-                            <li class="list-group-item">- Chocolate caliente <span>(clásico, con especias, con malvaviscos)</span> </li>
-                            <li class="list-group-item">- Mate cocido <span>(muy popular en Argentina)</span> </li>
-                            <li class="list-group-item">- Leche dorada <span>(cúrcuma, jengibre y especias)</span> </li>
-                            <li class="list-group-item">- Café turco <span>(intenso y especiado, preparado en un cezve)</span> </li>
-                            <li class="list-group-item">- Café bombón <span>(espresso con leche condensada)</span> </li>
-                            <li class="list-group-item">- Carajillo <span>(café con licor, muy popular en España)</span> </li>
-                            <li class="list-group-item">- Té matcha tradicional <span>(sin leche, batido con agua caliente)</span> </li>
-                            <li class="list-group-item">- Chocolate caliente mexicano <span>(con canela y un toque de chile)</span> </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item">-Café frío <span>(cold brew, iced coffee, frappé)</span> </li>
-                            <li class="list-group-item">-Té helado <span>(negro, verde, chai, frutal)</span> </li>
-                            <li class="list-group-item">-Infusiones frías <span>(hibisco, menta, frutos rojos)</span> </li>
-                            <li class="list-group-item">-Limonada <span>(tradicional, con menta, con frutos rojos)</span> </li>
-                            <li class="list-group-item">-Batidos <span>(banana, chocolate, frutas mixtas)</span> </li>
-                            <li class="list-group-item">-Smoothies <span>(mango, fresa, frutos del bosque)</span> </li>
-                            <li class="list-group-item">-Leche malteada <span>(vainilla, chocolate, fresa)</span> </li>
-                            <li class="list-group-item">-Matcha frío <span>(matcha latte helado, frappé de matcha)</span> </li>
-                            <li class="list-group-item">-Chocolate frío <span>(clásico, con especias, con malvaviscos)</span> </li>
-                            <li class="list-group-item">-Milkshake <span>(oreo, caramelo, café)</span> </li>
-                            <li class="list-group-item">-Café tonic <span>(cold brew con agua tónica, refrescante y cítrico)</span> </li>
-                            <li class="list-group-item">-Té boba <span>(té con leche y perlas de tapioca)</span> </li>
-                            <li class="list-group-item">-Yerba mate fría <span>(tereré, con jugo de cítricos o hierbas)</span> </li>
-                            <li class="list-group-item">-Infusión fría de jengibre y limón <span>(refrescante y saludable)</span> </li>
-                            <li class="list-group-item">-Milk tea frío <span>(té negro con leche y azúcar)</span> </li>
-                            <li class="list-group-item">-Soda italiana <span>(agua con gas y jarabe de frutas)</span> </li>
-
-                        </ul>
-                    </div>
-                
-                </div>
+            <div class="col d-flex justify-content-center">
+              <div class="portada-img">
+                <img class="img-fluid" src="Imagenes/1.png" alt="" />
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <section class="menu my-5">
+        <div class="container color-fondo py-4 rounded-2">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active fw-bold"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                Calientes
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link fw-bold"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Frias
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content color-text" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <ul
+                id="Bebidas-calientes"
+                class="list-group list-group-flush mt-3"
+              >
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café negro
+                  <span>(americano, espresso, ristretto, lungo)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café con leche
+                  <span>(latte, cappuccino, flat white, macchiato)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café especial <span>(mocha, affogato, vienés)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Té <span>(negro, verde, rojo, blanco, chai)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Chocolate caliente
+                  <span>(clásico, con especias, con malvaviscos)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Mate cocido <span>(muy popular en Argentina)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Leche dorada <span>(cúrcuma, jengibre y especias)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café turco
+                  <span>(intenso y especiado, preparado en un cezve)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café bombón <span>(espresso con leche condensada)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Carajillo
+                  <span>(café con licor, muy popular en España)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Té matcha tradicional
+                  <span>(sin leche, batido con agua caliente)</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Chocolate caliente mexicano
+                  <span>(con canela y un toque de chile)</span>
+                </li>
+              </ul>
+            </div>
 
+            <div
+              class="tab-pane fade"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <ul class="list-group list-group-flush mt-3">
+                <li class="list-group-item">
+                  -Café frío <span>(cold brew, iced coffee, frappé)</span>
+                </li>
+                <li class="list-group-item">
+                  -Té helado <span>(negro, verde, chai, frutal)</span>
+                </li>
+                <li class="list-group-item">
+                  -Infusiones frías <span>(hibisco, menta, frutos rojos)</span>
+                </li>
+                <li class="list-group-item">
+                  -Limonada
+                  <span>(tradicional, con menta, con frutos rojos)</span>
+                </li>
+                <li class="list-group-item">
+                  -Batidos <span>(banana, chocolate, frutas mixtas)</span>
+                </li>
+                <li class="list-group-item">
+                  -Smoothies <span>(mango, fresa, frutos del bosque)</span>
+                </li>
+                <li class="list-group-item">
+                  -Leche malteada <span>(vainilla, chocolate, fresa)</span>
+                </li>
+                <li class="list-group-item">
+                  -Matcha frío
+                  <span>(matcha latte helado, frappé de matcha)</span>
+                </li>
+                <li class="list-group-item">
+                  -Chocolate frío
+                  <span>(clásico, con especias, con malvaviscos)</span>
+                </li>
+                <li class="list-group-item">
+                  -Milkshake <span>(oreo, caramelo, café)</span>
+                </li>
+                <li class="list-group-item">
+                  -Café tonic
+                  <span
+                    >(cold brew con agua tónica, refrescante y cítrico)</span
+                  >
+                </li>
+                <li class="list-group-item">
+                  -Té boba <span>(té con leche y perlas de tapioca)</span>
+                </li>
+                <li class="list-group-item">
+                  -Yerba mate fría
+                  <span>(tereré, con jugo de cítricos o hierbas)</span>
+                </li>
+                <li class="list-group-item">
+                  -Infusión fría de jengibre y limón
+                  <span>(refrescante y saludable)</span>
+                </li>
+                <li class="list-group-item">
+                  -Milk tea frío <span>(té negro con leche y azúcar)</span>
+                </li>
+                <li class="list-group-item">
+                  -Soda italiana <span>(agua con gas y jarabe de frutas)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-4">
+        <h4>Carrito de compras</h4>
+        <ul id="carrito" class="list-group"></ul>
+      </div>
     </main>
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer class="fondo-footer">
-        <nav class="container ">
-            <div class="row mt-5 pt-4">
-                <div class="col-12 col-img">
-                    <img src="svg/Logo.svg" alt="">
-                </div>
-                <div class="col-12 d-flex justify-content-between">
-                    <div>
-                        <div class="direccion">
-                            <h6>Ubicacion</h6>
-                            <p>Avenida Siempre Viva 568. <br>Tel. 356786456</p>
-                        </div>
-                    </div>
-                    <div >
-                        <ul class="link-footage">
-                            <li><a href="contactos.html">Contacto</a></li>
-                            <li><a href="index.html">Inicio</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <nav class="container">
+        <div class="row mt-5 pt-4">
+          <div class="col-12 col-img">
+            <img src="svg/Logo.svg" alt="" />
+          </div>
+          <div class="col-12 d-flex justify-content-between">
+            <div>
+              <div class="direccion">
+                <h6>Ubicacion</h6>
+                <p>Avenida Siempre Viva 568. <br />Tel. 356786456</p>
+              </div>
             </div>
-        </nav>
+            <div>
+              <ul class="link-footage">
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
-</body>
+    <script src="bebidas.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
