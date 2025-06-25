@@ -169,62 +169,78 @@
               aria-labelledby="profile-tab"
               tabindex="0"
             >
-              <ul class="list-group list-group-flush mt-3">
-                <li class="list-group-item">
-                  -Café frío <span>(cold brew, iced coffee, frappé)</span>
+              <ul id="Bebidas-fri" class="list-group list-group-flush mt-3">
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café frío <span>(cold brew, iced coffee, frappé)</span>
                 </li>
-                <li class="list-group-item">
-                  -Té helado <span>(negro, verde, chai, frutal)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Té helado <span>(negro, verde, chai, frutal)</span>
                 </li>
-                <li class="list-group-item">
-                  -Infusiones frías <span>(hibisco, menta, frutos rojos)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Infusiones frías <span>(hibisco, menta, frutos rojos)</span>
                 </li>
-                <li class="list-group-item">
-                  -Limonada
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Limonada
                   <span>(tradicional, con menta, con frutos rojos)</span>
                 </li>
-                <li class="list-group-item">
-                  -Batidos <span>(banana, chocolate, frutas mixtas)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Batidos <span>(banana, chocolate, frutas mixtas)</span>
                 </li>
-                <li class="list-group-item">
-                  -Smoothies <span>(mango, fresa, frutos del bosque)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Smoothies <span>(mango, fresa, frutos del bosque)</span>
                 </li>
-                <li class="list-group-item">
-                  -Leche malteada <span>(vainilla, chocolate, fresa)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Leche malteada <span>(vainilla, chocolate, fresa)</span>
                 </li>
-                <li class="list-group-item">
-                  -Matcha frío
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Matcha frío
                   <span>(matcha latte helado, frappé de matcha)</span>
                 </li>
-                <li class="list-group-item">
-                  -Chocolate frío
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Chocolate frío
                   <span>(clásico, con especias, con malvaviscos)</span>
                 </li>
-                <li class="list-group-item">
-                  -Milkshake <span>(oreo, caramelo, café)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Milkshake <span>(oreo, caramelo, café)</span>
                 </li>
-                <li class="list-group-item">
-                  -Café tonic
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Café tonic
                   <span
                     >(cold brew con agua tónica, refrescante y cítrico)</span
                   >
                 </li>
-                <li class="list-group-item">
-                  -Té boba <span>(té con leche y perlas de tapioca)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Té boba <span>(té con leche y perlas de tapioca)</span>
                 </li>
-                <li class="list-group-item">
-                  -Yerba mate fría
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Yerba mate fría
                   <span>(tereré, con jugo de cítricos o hierbas)</span>
                 </li>
-                <li class="list-group-item">
-                  -Infusión fría de jengibre y limón
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Infusión fría de jengibre y limón
                   <span>(refrescante y saludable)</span>
                 </li>
-                <li class="list-group-item">
-                  -Milk tea frío <span>(té negro con leche y azúcar)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Milk tea frío <span>(té negro con leche y azúcar)</span>
                 </li>
-                <li class="list-group-item">
-                  -Soda italiana <span>(agua con gas y jarabe de frutas)</span>
+                <li class="list-group-item d-flex align-items-center gap-2">
+                  <input type="checkbox" />
+                  - Soda italiana <span>(agua con gas y jarabe de frutas)</span>
                 </li>
               </ul>
             </div>
@@ -232,8 +248,11 @@
         </div>
       </section>
 
-      <div class="container my-4">
-        <h4>Carrito de compras</h4>
+      <div
+        id="carrito_compras"
+        class="container my-4 color-fondo py-4 rounded-2"
+      >
+        <h4>Pedidos</h4>
         <ul id="carrito" class="list-group list-group-flush"></ul>
       </div>
     </main>
