@@ -189,11 +189,20 @@ span {
 .color-fondo {
   background-color: var(--color--1);
 }
+
+.color-fondo-2 {
+  background-color: var(--color--4);
+}
 .menu div ul li button {
   color: var(--color--3);
 }
 
 /* Fin portada */
+
+
+.fondo{
+  filter: drop-shadow(1px 5px 5px black);
+}
 
 /* Inicio footage */
 
