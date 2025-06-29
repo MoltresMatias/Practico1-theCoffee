@@ -87,6 +87,11 @@ botonPedido.addEventListener("click", function (e) {
   function ventana() {
     const div = document.getElementById("popup");
     div.style.display = "block";
+
+    let close = document.getElementById('close');
+    close.addEventListener('click', () => {
+    div.style.display = "none";
+  })
   }
 
   function desactivarCheck() {
@@ -95,6 +100,9 @@ botonPedido.addEventListener("click", function (e) {
 
   ventana();
   desactivarCheck();
+  
+
+  
 });
 
 carrito_pedidos.appendChild(botonPedido);
